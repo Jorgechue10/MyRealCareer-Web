@@ -1,0 +1,48 @@
+main {
+
+    background-color: #fff;
+
+    .contenedor{
+        h2{
+            font-weight: 400;
+            font-size: 18px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #c6c6c6;
+        }
+        form{
+            label{
+                display: block;
+                padding: 8px 0;
+                margin-top: 18px;
+            }
+            input[type=text], textarea{
+                padding: 10px;
+                width: 100%;
+            }
+            input[type=text]{
+                height: 60px;
+            }
+            textarea{
+                height: 200px;
+            }
+            input[type=submit], input[type=reset]{
+                font-size: 14px;
+                padding: 10px;
+                background-color: #0095FF;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                margin: 18px 0;
+                &:hover{
+                    background-color: #0077cc;
+                }
+            }            
+            img{
+                max-width: 450px;
+            }
+            input[type=file]{
+                display: block;
+            }            
+        }
+    }
+}

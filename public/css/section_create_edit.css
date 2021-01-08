@@ -1,0 +1,55 @@
+main {
+  background-color: #fff;
+}
+
+main .contenedor h2 {
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+main .contenedor form label {
+  display: block;
+  padding: 8px 0;
+  margin-top: 18px;
+}
+
+main .contenedor form input[type=text],
+main .contenedor form textarea {
+  padding: 10px;
+  width: 100%;
+}
+
+main .contenedor form input[type=text] {
+  height: 60px;
+}
+
+main .contenedor form textarea {
+  height: 200px;
+}
+
+main .contenedor form input[type=submit],
+main .contenedor form input[type=reset] {
+  font-size: 14px;
+  padding: 10px;
+  background-color: #0095FF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 18px 0;
+}
+
+main .contenedor form input[type=submit]:hover,
+main .contenedor form input[type=reset]:hover {
+  background-color: #0077cc;
+}
+
+main .contenedor form img {
+  max-width: 450px;
+}
+
+main .contenedor form input[type=file] {
+  display: block;
+}
+

@@ -1,0 +1,56 @@
+// Variables
+@import '../variables';
+
+a{
+    color: $color_texto;
+    
+    .objeto__info{
+        display: flex;
+
+        .objeto__img {
+            width: 200px;
+            min-width: 200px;
+            height: 112px;
+            position: relative;
+            &::after{
+                background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+                content: "";
+                inset: 0px;
+                position: absolute;
+                transition: all 0.5s ease 0s;
+                opacity: 0;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .objeto__txt{
+            margin-left: 25px;
+
+            .objeto__tiempo{
+                display: inline-block;
+                color: rgba(255, 255, 255, 0.5);
+                letter-spacing: 0.5px;
+                font-size: 11px;
+                line-height: 1.625;
+                text-transform: uppercase;
+                margin-bottom: 5px;                        
+            }
+            .objeto__titulo{
+                font-size: 14px;
+                letter-spacing: 0.2px;
+                line-height: 1.4;
+            }
+        }
+    }
+    &:hover{
+        color: $color_texto_hover;
+        transition: all 0.5s ease 0s;
+        .noticia__info .noticia__img:after{
+            opacity: 1;
+        }
+    }
+}

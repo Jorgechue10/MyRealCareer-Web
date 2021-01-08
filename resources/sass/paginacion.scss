@@ -1,0 +1,39 @@
+// Variables
+@import 'variables';
+
+
+#paginacion {
+    display: flex;
+    justify-content: center;
+    
+    nav{
+        padding: 60px 0;
+
+        ul.pagination{
+            list-style: none;
+        
+            li{
+                float: left;
+                margin: 0 5px;
+        
+                a{
+                    text-decoration: none;
+                    color: $color_texto;
+        
+                    &:hover{
+                        color: $color_texto_hover;
+                    }
+                }
+        
+                span{
+                    color: $color_texto_hover;
+                }
+
+                a, span{
+                    padding: 0 7px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

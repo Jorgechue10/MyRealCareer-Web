@@ -1,0 +1,119 @@
+footer{
+    background-color: #333;
+    
+    .contenedor{
+        width: 80%;
+        margin: auto;
+        display: flex;
+
+        div{
+            width: 25%;
+            padding: 80px 25px;
+            
+            p{
+                color: #999;
+                line-height: 25px;
+            }
+
+            h2, h3{
+                color: #fff;
+            }
+            
+            h2{
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+        }
+        .columna__uno{
+            h3{
+                font-family: Courgette;
+                letter-spacing: 3px;
+                margin: 10px 0;
+            }
+        }
+
+        .columna__dos, .columna__tres, .columna__cuatro{
+            h2::before{
+                content: '|';
+                color: #c65039;
+                padding-right: 10px;
+            }
+        }
+        .columna__tres, .columna__cuatro{
+            ul{
+                list-style: none;
+                li{
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                    line-height: 40px;
+                    a{
+                        color: #999;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .columna__dos {
+            a{
+                text-decoration: none;
+                display: inline-block;            
+                width: 40px;
+                height: 40px;            
+                border-radius: 50%;
+                background: #494848;
+                position: relative;
+
+                i{
+                    color: #fff;
+                    font-size: 20px;
+                    /*Centrar iconos*/
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+        }
+    }
+
+    .footer__bottom{
+        text-align: center;
+
+        .footer__logo{
+            width: 120px;
+            /*filter: brightness(0) invert(1);*/ /*Icono en blanco*/
+        }
+        .footer__copyright{
+            line-height: 75px;
+            color: #999;
+        }
+    }    
+}
+
+@media(max-width:1051px) {
+    footer{
+        .contenedor{
+            display: block;
+            div{
+                float: left;
+                width: 50%;
+                padding: 25px;
+            }
+            .columna__tres{
+                clear: both;
+            }
+        }
+    }
+}
+
+@media(max-width:667px) { 
+    footer .contenedor div{
+        width: 100%;
+        padding: 25px 0;
+
+        &.columna__cuatro{
+            padding: 0 0 50px;
+            margin-top: -25px;
+        }
+    }
+}

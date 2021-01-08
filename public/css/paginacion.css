@@ -1,0 +1,39 @@
+/*#2F2F2F*/
+
+#paginacion {
+  display: flex;
+  justify-content: center;
+}
+
+#paginacion nav {
+  padding: 60px 0;
+}
+
+#paginacion nav ul.pagination {
+  list-style: none;
+}
+
+#paginacion nav ul.pagination li {
+  float: left;
+  margin: 0 5px;
+}
+
+#paginacion nav ul.pagination li a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+#paginacion nav ul.pagination li a:hover {
+  color: #fff;
+}
+
+#paginacion nav ul.pagination li span {
+  color: #fff;
+}
+
+#paginacion nav ul.pagination li a,
+#paginacion nav ul.pagination li span {
+  padding: 0 7px;
+  font-size: 18px;
+}
+

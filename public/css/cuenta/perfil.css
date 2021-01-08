@@ -1,0 +1,135 @@
+main {
+  background-color: #f8f8f8;
+}
+
+main .contenedor {
+  display: flex;
+  align-items: flex-start;
+}
+
+main .contenedor section * {
+  color: #000000 !important;
+}
+
+main .contenedor .objeto__titulo {
+  margin-top: 8px;
+}
+
+main .contenedor .objeto__img {
+  width: 200px;
+  min-width: 200px;
+  height: 112px;
+}
+
+main .contenedor .user__imagen {
+  width: 170px;
+  min-width: 170px;
+  height: 150px;
+}
+
+main .contenedor .nav__left {
+  margin: 0 15px;
+  width: 25%;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+}
+
+main .contenedor .nav__left ul {
+  list-style: none;
+}
+
+main .contenedor .nav__left ul .nav__left__list {
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 15px;
+}
+
+main .contenedor .nav__left ul .nav__left__list a {
+  color: #000;
+}
+
+main .contenedor .nav__left ul .nav__left__list a:hover {
+  color: #ff5353;
+}
+
+main .contenedor .contenido {
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  width: 60%;
+  padding: 15px;
+}
+
+main .contenedor .contenido img[class*=user__img]:not([style*="visibility: hidden;"]) {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #b3b3b3;
+}
+
+main .contenedor .contenido .datos {
+  display: flex;
+  justify-content: space-between;
+  word-wrap: break-word;
+  margin-top: 8px;
+}
+
+main .contenedor .contenido .datos .info {
+  margin-top: 10px;
+}
+
+main .contenedor .contenido .datos .info a {
+  color: #000000;
+}
+
+main .contenedor .contenido .datos .info span {
+  display: block;
+}
+
+main .contenedor .contenido .datos .info .info__titulo {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main .contenedor .contenido .datos .info .info__contenido {
+  margin: 5px 0 20px;
+}
+
+main .contenedor .contenido .datos .user__foto {
+  min-width: 200px;
+  text-align: center;
+}
+
+main .contenedor .contenido .datos .user__foto .button {
+  font-size: 14px;
+  padding: 10px;
+  background-color: #0095FF;
+  color: #fff;
+  cursor: pointer;
+  margin: 18px 0;
+}
+
+main .contenedor .contenido .datos .user__foto .button:hover {
+  background-color: #0077cc;
+}
+
+main .contenedor .contenido .datos .user__foto input[type=submit] {
+  background-color: #ff3333;
+  border-radius: 25px;
+}
+
+main .contenedor .contenido .datos .user__foto input[type=submit]:hover {
+  background-color: #ff8080;
+}
+
+@media (max-width: 768px) {
+  main .contenedor {
+    display: block;
+  }
+
+  main .contenedor .nav__left,
+  main .contenedor .contenido {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}
+

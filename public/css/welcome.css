@@ -1,0 +1,149 @@
+main .contenedor img,
+.banner img {
+  display: block;
+  width: 100%;
+}
+
+main .contenedor h2,
+main .contenedor h3,
+.banner h2,
+.banner h3 {
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.banner {
+  position: relative;
+  z-index: -1000;
+  /*margin-bottom: 20px;*/
+}
+
+.banner .contenedor {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.banner .banner_img {
+  filter: brightness(70%);
+}
+
+main .contenedor {
+  padding-top: 0;
+}
+
+@media (min-width: 769px) {
+  main .contenedor {
+    padding: 0 15px 50px;
+  }
+}
+
+main .contenedor .info .info__columna {
+  color: #fff;
+  padding: 30px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+main .contenedor .info .info__columna .info__txt {
+  padding: 50px 30px;
+}
+
+main .contenedor .info .info__columna .info__txt .info__titulo {
+  margin-bottom: 15px;
+}
+
+main .contenedor .info .info__columna .info__txt .info__contenido {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  main .contenedor .info .info__columna img {
+    margin: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  main .contenedor .info .info__columna .info__titulo {
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  main .contenedor .info .info__columna {
+    display: flex;
+    align-items: center;
+  }
+
+  main .contenedor .info .info__columna img {
+    width: 50%;
+  }
+
+  main .contenedor .info .info__columna .info__txt {
+    padding: 20px 75px 50px;
+  }
+
+  main .contenedor .info .info__columna .info__txt:nth-child(2n) {
+    padding: 20px 0 50px 75px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner__titulo {
+    font-size: 15px;
+  }
+
+  .cursos__titulo {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .banner__titulo {
+    font-size: 23px;
+  }
+
+  .cursos__titulo {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .banner__titulo {
+    font-size: 40px;
+  }
+
+  .banner__txt {
+    font-size: 22px;
+  }
+
+  .info__titulo {
+    font-size: 1.5em;
+  }
+
+  .info__contenido {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner__titulo {
+    font-size: 50px;
+  }
+
+  .banner__txt {
+    font-size: 25px;
+  }
+
+  .info__titulo {
+    font-size: 2.5em;
+  }
+
+  .info__contenido {
+    font-size: 1.15em;
+  }
+}
+

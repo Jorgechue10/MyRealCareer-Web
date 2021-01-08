@@ -1,0 +1,109 @@
+/*#2F2F2F*/
+
+main .contenedor {
+  color: #CCC;
+  /*#2F2F2F*/
+}
+
+main .contenedor a {
+  color: #CCC;
+}
+
+main .contenedor #objeto__borrar {
+  color: red;
+}
+
+main .contenedor .section__name {
+  color: #fff;
+  font-size: 18px;
+  line-height: 50px;
+  margin: 10px;
+}
+
+main .contenedor #objeto__crear {
+  background-color: #66ff66;
+  padding: 0.25em 0.75em;
+  font-size: 0.875em;
+  float: right;
+  margin: 10px;
+  color: #000;
+}
+
+main .contenedor #objeto__crear:hover {
+  background-color: #b3ffb3;
+}
+
+main .contenedor article {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px 0;
+}
+
+main .contenedor article .opciones {
+  background: blue;
+  float: right;
+  display: flex;
+}
+
+main .contenedor article .opciones button {
+  text-decoration: none;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+main .contenedor article .opciones button:hover {
+  opacity: 0.85;
+}
+
+main .contenedor article .opciones button.icon-edit {
+  background-color: orange;
+}
+
+main .contenedor article .opciones button.icon-delete {
+  background-color: red;
+}
+
+main .contenedor #objeto__empty {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+main .contenedor #paginacion {
+  display: flex;
+  justify-content: center;
+}
+
+main .contenedor #paginacion nav {
+  padding: 60px 0;
+}
+
+main .contenedor #paginacion nav ul.pagination {
+  list-style: none;
+}
+
+main .contenedor #paginacion nav ul.pagination li {
+  float: left;
+  margin: 0 5px;
+}
+
+main .contenedor #paginacion nav ul.pagination li a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+main .contenedor #paginacion nav ul.pagination li a:hover {
+  color: #fff;
+}
+
+main .contenedor #paginacion nav ul.pagination li span {
+  color: #fff;
+}
+
+main .contenedor #paginacion nav ul.pagination li a,
+main .contenedor #paginacion nav ul.pagination li span {
+  padding: 0 7px;
+  font-size: 18px;
+}
+

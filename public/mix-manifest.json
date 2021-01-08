@@ -1,0 +1,18 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/css/welcome.css": "/css/welcome.css",
+    "/css/styles.css": "/css/styles.css",
+    "/css/section_index.css": "/css/section_index.css",
+    "/css/section_create_edit.css": "/css/section_create_edit.css",
+    "/css/paginacion.css": "/css/paginacion.css",
+    "/css/header.css": "/css/header.css",
+    "/css/footer.css": "/css/footer.css",
+    "/css/comentarios.css": "/css/comentarios.css",
+    "/css/ayuda.css": "/css/ayuda.css",
+    "/css/temas/temas_show.css": "/css/temas/temas_show.css",
+    "/css/temas/tema.css": "/css/temas/tema.css",
+    "/css/noticias/noticias_show.css": "/css/noticias/noticias_show.css",
+    "/css/noticias/noticias_index.css": "/css/noticias/noticias_index.css",
+    "/css/cuenta/perfil.css": "/css/cuenta/perfil.css"
+}

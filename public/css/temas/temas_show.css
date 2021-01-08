@@ -1,0 +1,38 @@
+main {
+  background-color: #fff;
+}
+
+main .contenedor {
+  font-size: 17px;
+}
+
+main .contenedor a {
+  color: inherit;
+}
+
+main .contenedor .tema__contenido .contendio__txt {
+  margin: 8px 0 30px;
+}
+
+main .contenedor .tema__contenido img {
+  max-width: 100%;
+}
+
+main .contenedor .tema__contenido h1 {
+  margin: 20px auto;
+  font-size: 2.8em;
+  line-height: 1;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+main .contenedor .tema__contenido .noticia__fecha {
+  font-size: 14px;
+  color: #121212;
+}
+
+main .contenedor .tema__contenido .noticia__contenido {
+  margin-top: 40px;
+}
+

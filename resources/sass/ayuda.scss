@@ -1,0 +1,98 @@
+@font-face { font-family: "Ionicons"; src: url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1"); src: url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"), url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.ttf?v=2.0.1") format("truetype"), url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.woff?v=2.0.1") format("woff"), url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg"); font-weight: normal; font-style: normal; }
+
+main{
+
+    background-color: #fff;
+
+    .contenedor {
+
+        color: #000;
+    
+        h3 {
+            font-size: 18px;
+            line-height: 50px;
+            margin: 10px;
+        }
+        .accordion a {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            width: 100%;
+            padding: 1rem 4rem 1rem 1rem;
+            margin-top: 15px;
+            color: #000;
+            font-size: 1.15rem;
+            font-weight: 400;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .accordion a:hover,
+        .accordion a:hover::after {
+            cursor: pointer;
+            color: #ff5353;
+        }
+        .accordion a:hover::after {
+            border: 1px solid #ff5353;
+        }
+        .accordion a.active {
+            color: #ff5353;
+            border-bottom: 1px solid #ff5353;
+        }
+        .accordion a::after {
+            font-family: "Ionicons";
+            content: "\f218";
+            position: absolute;
+            float: right;
+            right: 1rem;
+            top: 1px;
+            font-size: 1rem;
+            line-height: 2em;
+            color: #000;
+            padding: 5px;
+            width: 30px;
+            height: 30px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            border: 1px solid #7288a2;
+            text-align: center;
+        }
+        .accordion a.active::after {
+            font-family: "Ionicons";
+            content: "\f209";
+            color: #ff5353;
+            border: 1px solid #ff5353;
+        }
+        .accordion .content {
+            opacity: 0;
+            padding: 0 1rem;
+            max-height: 0;
+            border-bottom: 1px solid #e5e5e5;
+            overflow: hidden;
+            clear: both;
+            -webkit-transition: all 0.2s ease 0.15s;
+            -o-transition: all 0.2s ease 0.15s;
+            transition: all 0.2s ease 0.15s;
+        }
+        .accordion .content p {
+            font-size: 1rem;
+            line-height: 1.5;
+            font-weight: 300;
+        }
+        .accordion .content.active {
+            opacity: 1;
+            padding: 1rem;
+            max-height: 100%;
+            -webkit-transition: all 0.35s ease 0.15s;
+            -o-transition: all 0.35s ease 0.15s;
+            transition: all 0.35s ease 0.15s;
+        }
+    }
+    
+}

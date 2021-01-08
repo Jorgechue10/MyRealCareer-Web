@@ -1,0 +1,69 @@
+// Variables
+@import 'variables';
+
+main .contenedor{
+
+    color: #CCC;
+
+    a{
+        color: #CCC;
+    }
+
+    #objeto__borrar{
+        color: red;
+    }
+
+    .section__name{
+        color: #fff;
+        font-size: 18px;
+        line-height: 50px;
+        margin: 10px;
+    }
+
+    #objeto__crear{
+        background-color: $color_verde;
+        padding: .25em .75em;
+        font-size: .875em;
+        float: right;
+        margin: 10px;
+        color: #000;
+
+        &:hover{
+            background-color: #b3ffb3;
+        }
+    }
+
+    article  {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 20px 0;
+
+        .opciones{
+            background: blue;
+            float: right;
+            display: flex;
+            button{
+                text-decoration: none;
+                width: 35px;
+                height: 35px;
+                cursor: pointer;
+                &:hover{
+                    opacity: 0.85;
+                }
+
+                &.icon-edit{
+                    background-color: orange;
+                }
+                &.icon-delete{
+                    background-color: red;
+                }
+            }
+        }        
+    }
+    #objeto__empty{
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 60px;
+    }
+    @import "paginacion";
+}

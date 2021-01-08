@@ -1,0 +1,124 @@
+footer {
+  background-color: #333;
+}
+
+footer .contenedor {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+footer .contenedor div {
+  width: 25%;
+  padding: 80px 25px;
+}
+
+footer .contenedor div p {
+  color: #999;
+  line-height: 25px;
+}
+
+footer .contenedor div h2,
+footer .contenedor div h3 {
+  color: #fff;
+}
+
+footer .contenedor div h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+footer .contenedor .columna__uno h3 {
+  font-family: Courgette;
+  letter-spacing: 3px;
+  margin: 10px 0;
+}
+
+footer .contenedor .columna__dos h2::before,
+footer .contenedor .columna__tres h2::before,
+footer .contenedor .columna__cuatro h2::before {
+  content: "|";
+  color: #c65039;
+  padding-right: 10px;
+}
+
+footer .contenedor .columna__tres ul,
+footer .contenedor .columna__cuatro ul {
+  list-style: none;
+}
+
+footer .contenedor .columna__tres ul li,
+footer .contenedor .columna__cuatro ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  line-height: 40px;
+}
+
+footer .contenedor .columna__tres ul li a,
+footer .contenedor .columna__cuatro ul li a {
+  color: #999;
+  text-decoration: none;
+}
+
+footer .contenedor .columna__dos a {
+  text-decoration: none;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #494848;
+  position: relative;
+}
+
+footer .contenedor .columna__dos a i {
+  color: #fff;
+  font-size: 20px;
+  /*Centrar iconos*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer .footer__bottom {
+  text-align: center;
+}
+
+footer .footer__bottom .footer__logo {
+  width: 120px;
+  /*filter: brightness(0) invert(1);*/
+  /*Icono en blanco*/
+}
+
+footer .footer__bottom .footer__copyright {
+  line-height: 75px;
+  color: #999;
+}
+
+@media (max-width: 1051px) {
+  footer .contenedor {
+    display: block;
+  }
+
+  footer .contenedor div {
+    float: left;
+    width: 50%;
+    padding: 25px;
+  }
+
+  footer .contenedor .columna__tres {
+    clear: both;
+  }
+}
+
+@media (max-width: 667px) {
+  footer .contenedor div {
+    width: 100%;
+    padding: 25px 0;
+  }
+
+  footer .contenedor div.columna__cuatro {
+    padding: 0 0 50px;
+    margin-top: -25px;
+  }
+}
+

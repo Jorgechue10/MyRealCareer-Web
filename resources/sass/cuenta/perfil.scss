@@ -1,0 +1,121 @@
+main {
+    background-color: #f8f8f8;
+
+    .contenedor {
+
+        section * {
+            color: #000000 !important;
+        }
+
+        display: flex;
+        align-items: flex-start;
+
+        .objeto__titulo{
+            margin-top: 8px;
+        }
+
+        .objeto__img {
+            width: 200px;
+            min-width: 200px;
+            height: 112px;
+        }
+
+        .user__imagen {
+            width: 170px;
+            min-width: 170px;
+            height: 150px;
+        }
+    
+        .nav__left{
+            margin: 0 15px;
+            width: 25%;
+            background-color: #fff;
+            border: 1px solid #ebebeb;
+            ul{
+                list-style: none;
+    
+                .nav__left__list{
+                    width: 100%;
+                    border-bottom: 1px solid #e5e5e5;
+                    padding: 15px;  
+                    
+                    a{
+                        color: #000;
+                        &:hover{
+                            color: #ff5353;
+                        }
+                    }
+                }
+            }
+        }
+        .contenido{
+            background-color: #fff;
+            border: 1px solid #ebebeb;
+            width: 60%;
+            padding: 15px;
+
+            img[class*="user__img"]:not([style*='visibility: hidden;']) {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: #b3b3b3;
+            }            
+
+            .datos{
+                display: flex;
+                justify-content: space-between;
+                word-wrap:break-word;
+                margin-top: 8px;
+
+                .info{
+                    margin-top: 10px;                    
+                    a{
+                        color: #000000;
+                    }
+                    span{
+                        display: block;
+                    }
+                    .info__titulo{
+                        font-size: 16px;
+                        font-weight: bold;                        
+                    }
+                    .info__contenido{
+                        margin: 5px 0 20px;
+                    }
+                }
+
+                .user__foto{
+                    min-width: 200px;
+                    text-align: center;
+    
+                    .button {
+                        font-size: 14px;
+                        padding: 10px;
+                        background-color: #0095FF;
+                        color: #fff;
+                        cursor: pointer;
+                        margin: 18px 0;
+                        &:hover{
+                            background-color: #0077cc;
+                        }
+                    }
+                    input[type=submit]{
+                        background-color: #ff3333;
+                        border-radius: 25px;
+                        &:hover{
+                            background-color: #ff8080;
+                        }
+                    }
+                }                
+            }
+        }
+
+        @media(max-width:768px) { 
+            display: block;
+            .nav__left, .contenido{
+                width: 100%;
+                margin: 0 0 20px;
+            }
+        }
+    }
+}
